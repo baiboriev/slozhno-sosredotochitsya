@@ -8,7 +8,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-inline: 10px;
 }
 
 .header {
@@ -16,6 +15,7 @@
   grid-template-rows: repeat(3, 1fr);
   min-block-size: 668px;
   position: relative;
+  padding-inline: 10px;
 }
 
 .decorated-zone::after {
@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: 10px;
   display: inline-block;
   block-size: 25px;
   inline-size: 25px;
@@ -36,7 +36,7 @@
   content: "";
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
   display: inline-block;
   block-size: 25px;
   inline-size: 25px;
@@ -46,7 +46,7 @@
 
 .header__lamp {
   position: absolute;
-  right: 9px;
+  right: 19px;
   top: 10px;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 11.5px;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
@@ -85,7 +85,8 @@
   background-color: transparent;
   cursor: pointer;
 
-  padding: 2px 13px;
+  padding-block: 1px 3px;
+  padding-inline: 12px;
   text-align: center;
   font-family: inherit;
   color: var(--accent-color);
@@ -140,6 +141,7 @@
 
 .content {
   margin-block-start: 40px;
+  padding-inline: 10px;
 }
 
 .content__section {
@@ -238,24 +240,24 @@
 }
 
 @media (768px <= width < 1024px) {
-  .page {
-    padding-inline: 20px;
-  }
-
   .header {
     min-block-size: 1024px;
+    padding-inline: 20px;
   }
 
   .decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .header__lamp {
     top: 20px;
+    right: 29px;
   }
 
   .header__theme-menu {
@@ -280,6 +282,7 @@
 
   .content {
     margin-block-start: 60px;
+    padding-inline: 20px;
   }
 
   .content__section {
@@ -307,7 +310,6 @@
   .pictures__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 26% 31% 43%;
     grid-auto-flow: dense;
     gap: 20px;
   }
@@ -334,28 +336,29 @@
   .footer {
     min-block-size: 1024px;
     margin-block-start: 60px;
+    padding-inline: 20px;
   }
 }
 
 @media (min-width: 1024px) {
-  .page {
-    padding-inline: 20px;
-  }
-
   .header {
     min-block-size: 768px;
+    padding-inline: 20px;
   }
 
   .decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .header__lamp {
     top: 20px;
+    right: 29px;
   }
 
   .header__theme-menu {
@@ -387,6 +390,7 @@
 
   .content {
     margin-block-start: 60px;
+    padding-inline: 20px;
   }
 
   .content__section {
@@ -421,7 +425,6 @@
   .pictures__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 26% 31% 43%;
     grid-auto-flow: dense;
     gap: 20px;
   }
@@ -448,5 +451,6 @@
   .footer {
     min-block-size: 768px;
     margin-block-start: 60px;
+    padding-inline: 20px;
   }
 }
