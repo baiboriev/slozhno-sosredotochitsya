@@ -431,13 +431,6 @@
     gap: 20px;
   }
 
-  .pictures__card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
-    gap: 20px;
-  }
-
   .picture_sunset {
     grid-column: 1 / 3;
     grid-row: 1 / 1;
