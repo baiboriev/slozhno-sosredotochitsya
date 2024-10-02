@@ -1,9 +1,18 @@
 :root {
+  --bg-img: url(../images/cover-image-dark.png);
   --bg-color: #000028;
-  --main-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --accent-color-opacity: #ff007066;
+
+  --main-text-color: #f1b2ce;
+
+  --title-color: #ff0070;
+
   --heading-color: #db00ff;
+  --heading-accent-color: #ff0070;
+
+  --decoration-color: #ff0070;
+
   --title-decor-color: #ff0070;
-  --title-decor-accent-color: #000028;
+  --title-decor-text-color: #000028;
+
+  --button-hover-outline-color: #ff007066;
 }
