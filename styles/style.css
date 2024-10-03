@@ -48,7 +48,7 @@
   position: absolute;
   right: 19px;
   top: 10px;
-  display: flex;
+  display: var(--header-lamp-display);
   align-items: center;
   gap: 10px;
   color: var(--decoration-color);
